@@ -22,9 +22,20 @@ namespace StorebaeltREST.Controllers
 
         // GET api/<CarTicketsController>/5
         [HttpGet("{licenseplate}")]
-        public List<StorebaeltCar> Get(string licenseplate)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult Get(string licenseplate)
         {
-            return mgr.GetByLicenseplate(licenseplate);
+            try
+            {
+                return Ok(mgr.GetByLicenseplate(licenseplate));
+            }
+            catch (KeyNotFoundException knfe)
+            {
+                NotFound(knfe.Message);
+            }
+            return BadRequest();
         }
 
         // POST api/<CarTicketsController>

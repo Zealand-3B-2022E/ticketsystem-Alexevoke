@@ -32,9 +32,12 @@ namespace StorebaeltREST.Managers
 
         public List<StorebaeltCar> GetByLicenseplate(string licenseplate)
         {
-            List<StorebaeltCar> cars = _storebaeltCars.FindAll(k => k.Licenseplate == licenseplate);
-
-            return cars;
+            if (_storebaeltCars.Exists(k => k.Licenseplate == licenseplate))
+            {
+                return _storebaeltCars.FindAll(k => k.Licenseplate == licenseplate);
+            }
+            throw new KeyNotFoundException("No ticket exists with this license plate");
+            
         }
     }
 }
