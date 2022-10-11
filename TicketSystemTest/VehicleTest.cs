@@ -61,5 +61,31 @@ namespace TicketSystemTest
             Assert.AreEqual(expectedValue, actualValue);
 
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void TestCarLicensePlateCannotExceedSevenCharacters()
+        {
+            //Arrange
+            
+            //Act
+            Car car = new Car("DF98JLILL", DateTime.Now);
+
+            //Assert
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void TestMCLicensePlateCannotExceedSevenCharacters()
+        {
+            //Arrange
+
+            //Act
+            MC mc = new MC("DF98JLILL", DateTime.Now);
+
+            //Assert
+            Assert.Fail();
+        }
     }
 }

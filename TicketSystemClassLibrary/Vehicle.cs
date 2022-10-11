@@ -12,6 +12,7 @@ namespace TicketSystemClassLibrary
     /// </summary>
     public abstract class Vehicle
     {
+        
         /// <summary>
         /// This is the default constructor
         /// </summary>
@@ -25,8 +26,15 @@ namespace TicketSystemClassLibrary
         /// </summary>
         /// <param name="licenseplate">This is the license plate of the vehicle</param>
         /// <param name="date">This is a date</param>
-        public Vehicle(string licenseplate, DateTime date)
+        public Vehicle(string? licenseplate, DateTime date)
         {
+            if (licenseplate != null)
+            {
+                if (licenseplate.Length > 7)
+                {
+                    throw new ArgumentOutOfRangeException("The License plate can only have a length of 7 characters");
+                }
+            }
             Licenseplate = licenseplate;
             Date = date;
         }
@@ -37,6 +45,7 @@ namespace TicketSystemClassLibrary
         /// This is a property for the licenseplate of the vehicle
         /// </summary>
         public string? Licenseplate { get; private set; }
+     
 
         /// <summary>
         /// This is a property for a date
