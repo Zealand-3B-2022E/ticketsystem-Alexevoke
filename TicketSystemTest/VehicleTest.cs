@@ -93,5 +93,27 @@ namespace TicketSystemTest
             //Assert
             Assert.Fail();
         }
+        [TestMethod]
+        [DataRow(240, 2, false)]
+        [DataRow(228, 2, true)]
+        [DataRow(192, 4, false)]
+        [DataRow(182.40, 4, true)]
+        [DataRow(192, 5, false)]
+        [DataRow(182.40, 5, true)]
+
+        public void TestStorebaeltCarPriceReturnsCorrectValueWithBrobizzAndWeekendDiscount(double expectedValue, double days, bool brobizz)
+        {
+            //Arrange
+            StorebaeltCar car = new StorebaeltCar("LOLOLOL", DateTime.Now.AddDays(days));
+            car.Brobizz = brobizz;
+            double delta = 0.01;
+
+            //Act
+            double actualValue = car.Price();
+
+            //Assert
+            Assert.AreEqual(expectedValue, actualValue, delta);
+            
+        }
     }
 }
