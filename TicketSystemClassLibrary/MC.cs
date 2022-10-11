@@ -18,6 +18,15 @@ namespace TicketSystemClassLibrary
         {
 
         }
+        /// <summary>
+        /// This constructor allows the initialization of a motorcycle object with a license plate and a date
+        /// </summary>
+        /// <param name="licenseplate">This is the license plate of the MC</param>
+        /// <param name="date">This is a date</param>
+        public MC(string licenseplate, DateTime date) : base(licenseplate, date)
+        {
+
+        }
 
         /// <summary>
         /// This method gives the price of the MC

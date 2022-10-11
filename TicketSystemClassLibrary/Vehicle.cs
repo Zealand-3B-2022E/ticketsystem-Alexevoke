@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,9 +13,30 @@ namespace TicketSystemClassLibrary
     public abstract class Vehicle
     {
         /// <summary>
+        /// This is the default constructor
+        /// </summary>
+        public Vehicle()
+        {
+
+        }
+
+        /// <summary>
+        /// This constructor allows the initialization of a vehicle object with a license plate and a date
+        /// </summary>
+        /// <param name="licenseplate">This is the license plate of the vehicle</param>
+        /// <param name="date">This is a date</param>
+        public Vehicle(string licenseplate, DateTime date)
+        {
+            Licenseplate = licenseplate;
+            Date = date;
+        }
+
+
+
+        /// <summary>
         /// This is a property for the licenseplate of the vehicle
         /// </summary>
-        public string? Licenseplate { get; set; }
+        public string? Licenseplate { get; private set; }
 
         /// <summary>
         /// This is a property for a date
