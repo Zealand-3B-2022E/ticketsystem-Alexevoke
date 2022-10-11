@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TicketSystemClassLibrary
 {
     /// <summary>
-    /// This class represents a Motorcycle. It contains two properties and two methods
+    /// This class represents a Motorcycle. It contains two methods and inherits from the Vehicle class
     /// </summary>
     public class MC : Vehicle
     {

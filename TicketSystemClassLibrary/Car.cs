@@ -1,7 +1,7 @@
 ﻿namespace TicketSystemClassLibrary
 {
     /// <summary>
-    /// This is a class that represent a car. It contains two properties and two methods
+    /// This is a class that represent a car. It contains two methods and inherits from the vehicle class
     /// </summary>
     public class Car : Vehicle
     {

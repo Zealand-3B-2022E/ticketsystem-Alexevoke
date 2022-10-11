@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TicketSystemClassLibrary
 {
     /// <summary>
-    /// This is the base class of vehicles
+    /// This is the base class of vehicles it contains two properties and two methods
     /// </summary>
     public abstract class Vehicle
     {
