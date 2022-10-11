@@ -117,6 +117,64 @@ namespace TicketSystemTest
             
         }
 
-        
+        [TestMethod]
+        [DataRow(410, false)]
+        [DataRow(161, true)]
+        public void TestOresundCarPrice(double expectedValue, bool brobizz)
+        {
+            //Arrange
+            OresundCar car = new OresundCar();
+            car.Brobizz = brobizz;
+            
+            //Act
+            double actualValue = car.Price();
+
+            //Assert
+            Assert.AreEqual(expectedValue, actualValue);
+        }
+
+        [TestMethod]
+        [DataRow(210, false)]
+        [DataRow(73, true)]
+        public void TestOresundMCPrice(double expectedValue, bool brobizz)
+        {
+            //Arrange
+            OresundMC mc = new OresundMC();
+            mc.Brobizz = brobizz;
+
+            //Act
+            double actualValue = mc.Price();
+
+            //Assert
+            Assert.AreEqual(expectedValue, actualValue);
+        }
+
+        [TestMethod]
+        public void TestOresundCarVehicleType()
+        {
+            //Arrange
+            OresundCar car = new OresundCar();
+            string expectedValue = "Oresund car";
+
+            //Act
+            string actualValue = car.VehicleType();
+
+            //Assert
+            Assert.AreEqual(expectedValue, actualValue);
+        }
+
+        [TestMethod]
+        public void TestOresundMCVehicleType()
+        {
+            //Arrange
+            OresundMC mc = new OresundMC();
+            string expectedValue = "Oresund MC";
+
+            //Act
+            string actualValue = mc.VehicleType();
+
+            //Assert
+            Assert.AreEqual(expectedValue, actualValue);
+        }
     }
 }
