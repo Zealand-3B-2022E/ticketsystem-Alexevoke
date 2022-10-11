@@ -6,9 +6,18 @@
     public class Car
     {
         /// <summary>
+        /// This is the default constructor
+        /// </summary>
+        public Car()
+        {
+
+        }
+        
+        
+        /// <summary>
         /// This is a property for the licenseplate of the car
         /// </summary>
-        public string Licenseplate{ get; set; }
+        public string? Licenseplate{ get; set; }
 
         /// <summary>
         /// This is a property for a date
