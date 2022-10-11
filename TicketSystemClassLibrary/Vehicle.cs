@@ -18,7 +18,7 @@ namespace TicketSystemClassLibrary
         /// </summary>
         public Vehicle()
         {
-
+            Brobizz = false;
         }
 
         /// <summary>
@@ -37,6 +37,7 @@ namespace TicketSystemClassLibrary
             }
             Licenseplate = licenseplate;
             Date = date;
+            Brobizz = false;
         }
 
 
@@ -51,6 +52,11 @@ namespace TicketSystemClassLibrary
         /// This is a property for a date
         /// </summary>
         public DateTime Date { get; set; }
+
+        /// <summary>
+        /// This property is true or false. True if the vehicle has a Brobizz and false if it doesn't
+        /// </summary>
+        public bool Brobizz { get; set; }
 
         /// <summary>
         /// This method gives the price of the vehicle

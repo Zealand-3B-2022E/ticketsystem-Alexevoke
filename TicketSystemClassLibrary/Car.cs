@@ -8,7 +8,7 @@
         /// <summary>
         /// This is the default constructor
         /// </summary>
-        public Car()
+        public Car() : base()
         {
 
         }
@@ -30,6 +30,12 @@
         public override double Price()
         {
             double price = 240;
+
+            if (Brobizz)
+            {
+                return price * 0.95;
+            }
+
             return price;
         }
         /// <summary>

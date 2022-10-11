@@ -4,17 +4,20 @@ namespace TicketSystemTest
     public class VehicleTest
     {
         [TestMethod]
-        public void TestCarPriceReturnsProperValue()
+        [DataRow(240,false)]
+        [DataRow(228,true)]
+        public void TestCarPriceReturnsCorrectValueWithBrobizz(double expectedValue, bool brobizz)
         {
             //Arrange
             Car car = new Car();
-            double expectedValue = 240;
+            car.Brobizz = brobizz;
+            double delta = 0.01;
 
             //Act
             double actualValue = car.Price();
 
             //Assert
-            Assert.AreEqual(expectedValue, actualValue);
+            Assert.AreEqual(expectedValue, actualValue, delta);
 
         }
 
@@ -34,17 +37,20 @@ namespace TicketSystemTest
         }
 
         [TestMethod]
-        public void TestMCPriceReturnsProperValue()
+        [DataRow(125, false)]
+        [DataRow(118.75, true)]
+        public void TestMCPriceReturnsCorrectValueWithBrobizz(double expectedValue, bool brobizz)
         {
             //Arrange
             MC mc = new MC();
-            double expectedValue = 125;
+            mc.Brobizz = brobizz;
+            double delta = 0.01;
 
             //Act
             double actualValue = mc.Price();
 
             //Assert
-            Assert.AreEqual(expectedValue, actualValue);
+            Assert.AreEqual(expectedValue, actualValue, delta);
         }
 
         [TestMethod]

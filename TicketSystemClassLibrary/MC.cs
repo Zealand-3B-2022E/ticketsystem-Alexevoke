@@ -14,7 +14,7 @@ namespace TicketSystemClassLibrary
         /// <summary>
         /// This is the default constructor
         /// </summary>
-        public MC()
+        public MC() : base()
         {
 
         }
@@ -35,6 +35,12 @@ namespace TicketSystemClassLibrary
         public override double Price()
         {
             double price = 125;
+
+            if (Brobizz)
+            {
+                return price * 0.95;
+            }
+
             return price;
         }
         /// <summary>
