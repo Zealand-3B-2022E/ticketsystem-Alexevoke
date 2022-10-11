@@ -7,25 +7,24 @@ using TicketSystemClassLibrary;
 
 namespace OresundTicketLibrary
 {
-    public class OresundCar : Car
+    public class OresundMC : MC
     {
-        public OresundCar() : base()
+        public OresundMC() : base()
         {
 
         }
 
-        public OresundCar(string licenseplate, DateTime date) : base(licenseplate, date)
+        public OresundMC(string licenseplate, DateTime date) : base(licenseplate, date)
         {
 
         }
-
         public override double Price()
         {
-            double price = 410;
+            double price = 210;
 
             if (Brobizz)
             {
-                price = 161;
+                price = 73;
                 return price;
             }
 
@@ -34,10 +33,8 @@ namespace OresundTicketLibrary
 
         public override string VehicleType()
         {
-            string type = "Oresund car";
+            string type = "Oresund MC";
             return type;
         }
-
-
     }
 }
