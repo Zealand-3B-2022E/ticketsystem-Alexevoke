@@ -5,11 +5,13 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketSystemClassLibrary", "TicketSystemClassLibrary\TicketSystemClassLibrary.csproj", "{183D69DE-5904-46BD-9168-828D1DDE550C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystemTest", "TicketSystemTest\TicketSystemTest.csproj", "{D8E51B03-6542-475A-8D17-DCBC65C29781}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketSystemTest", "TicketSystemTest\TicketSystemTest.csproj", "{D8E51B03-6542-475A-8D17-DCBC65C29781}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{72BC5000-983C-42AB-8B7A-1FA85B4E8E83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{72BC5000-983C-42AB-8B7A-1FA85B4E8E83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundTicketLibrary", "OresundTicketLibrary\OresundTicketLibrary.csproj", "{29DBB933-7AA3-4934-9E13-249BF52FE865}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OresundTicketLibrary", "OresundTicketLibrary\OresundTicketLibrary.csproj", "{29DBB933-7AA3-4934-9E13-249BF52FE865}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorebaeltREST", "StorebaeltREST\StorebaeltREST.csproj", "{A32AC837-CB99-4989-8244-F61BB65B236D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{29DBB933-7AA3-4934-9E13-249BF52FE865}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29DBB933-7AA3-4934-9E13-249BF52FE865}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29DBB933-7AA3-4934-9E13-249BF52FE865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A32AC837-CB99-4989-8244-F61BB65B236D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A32AC837-CB99-4989-8244-F61BB65B236D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A32AC837-CB99-4989-8244-F61BB65B236D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A32AC837-CB99-4989-8244-F61BB65B236D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

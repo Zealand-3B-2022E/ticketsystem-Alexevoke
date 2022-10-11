@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StoreBaeltTicketLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:StoreBaeltTicketLibrary.StorebaeltCar">
+            <summary>
+            This class inherits from the the car class and new functionality is added to support implementation
+            for Storebaeltbroen
+            </summary>
+        </member>
+        <member name="M:StoreBaeltTicketLibrary.StorebaeltCar.#ctor">
+            <summary>
+            This is the default constructor
+            </summary>
+        </member>
+        <member name="M:StoreBaeltTicketLibrary.StorebaeltCar.#ctor(System.String,System.DateTime)">
+            <summary>
+            This constructor allows you to create a car object with a license plate and a date
+            </summary>
+            <param name="licenseplate">This is a license plate</param>
+            <param name="date">This is a date</param>
+        </member>
+        <member name="M:StoreBaeltTicketLibrary.StorebaeltCar.Price">
+            <summary>
+            This method returns the correct price based on whether it is saturday or sunday and if you have 
+            a brobizz
+            </summary>
+            <returns>Returns the price of the ticket for a car</returns>
+        </member>
+        <member name="M:StoreBaeltTicketLibrary.StorebaeltCar.VehicleType">
+            <summary>
+            This method gives you which type of vehicle it is
+            </summary>
+            <returns>Returns a string that tells you the vehicle type</returns>
+        </member>
+    </members>
+</doc>

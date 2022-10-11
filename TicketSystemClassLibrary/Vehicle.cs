@@ -45,7 +45,7 @@ namespace TicketSystemClassLibrary
         /// <summary>
         /// This is a property for the licenseplate of the vehicle
         /// </summary>
-        public string? Licenseplate { get; private set; }
+        public string? Licenseplate { get; set; }
      
 
         /// <summary>
