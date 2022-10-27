@@ -57,6 +57,7 @@ namespace StoreBaeltTicketLibrary
         /// <returns>Returns a string that tells you the vehicle type</returns>
         public override string VehicleType()
         {
+            //Kunne skriver return "car" i stedet for :)
             string type = "Car";
             return type;
         }
